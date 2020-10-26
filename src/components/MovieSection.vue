@@ -35,7 +35,6 @@ export default {
 				console.log(err);
       })
     .then(res => {
-      console.log(res);
       this.movies = res.data.Search;
     })
   }

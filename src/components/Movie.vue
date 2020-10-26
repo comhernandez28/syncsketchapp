@@ -38,18 +38,16 @@ export default {
 				console.log(err);
       })
     .then(res => {
-      console.log(res);
       this.movie = res.data;
     })
     }
   },
     created() {
-    this.axios.get("http://www.omdbapi.com/?i=" + this.movieId + "&apikey=d47f1e73")
+    this.axios.get("https://www.omdbapi.com/?i=" + this.movieId + "&apikey=d47f1e73")
     .catch(err => {
 				console.log(err);
       })
     .then(res => {
-      console.log(res);
       this.movie = res.data;
     })
   }
