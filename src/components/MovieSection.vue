@@ -30,7 +30,7 @@ export default {
 			};
 		},
   created() {
-    this.axios.get("http://www.omdbapi.com/?s=star+wars&apikey=d47f1e73")
+    this.axios.get("https://www.omdbapi.com/?s=star+wars&apikey=d47f1e73")
     .catch(err => {
 				console.log(err);
       })

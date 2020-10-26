@@ -33,7 +33,7 @@ export default {
   },
     watch: {
     "$route.params.id"(movieId) {
-     this.axios.get("http://www.omdbapi.com/?i=" + movieId + "&apikey=d47f1e73")
+     this.axios.get("https://www.omdbapi.com/?i=" + movieId + "&apikey=d47f1e73")
     .catch(err => {
 				console.log(err);
       })
